@@ -73,6 +73,11 @@
           "refName": "hdfs-BALANCER-BASE",
           "roleType": "BALANCER",
           "base": true
+        },
+        {
+          "refName": "hdfs-GATEWAY-BASE",
+          "roleType": "GATEWAY",
+          "base": true
         }
       ]
     },
@@ -156,6 +161,7 @@
         "hdfs-BALANCER-BASE",
         "hdfs-NAMENODE-BASE",
         "hdfs-SECONDARYNAMENODE-BASE",
+        "hdfs-GATEWAY-BASE",
         "hive-GATEWAY-BASE",
         "hive-HIVEMETASTORE-BASE",
         "hive-HIVESERVER2-BASE",
@@ -169,6 +175,7 @@
       "refName": "worker",
       "roleConfigGroupsRefNames": [
         "hdfs-DATANODE-BASE",
+        "hdfs-GATEWAY-BASE",
         "hive-GATEWAY-BASE",
         "yarn-NODEMANAGER-BASE"
       ],
